@@ -39,3 +39,17 @@ import ErrorBoundary from "./ErrorBoundary";
 * `children`: Components that should be protected from crashes.
 
 ## When to use
+
+Use ErrorBoundary to wrap:
+
+* Pages
+* Important UI sections
+* Components that may fail
+
+## Note
+
+Error Boundaries do NOT catch errors in:
+
+* Event handlers
+* Async code (setTimeout, promises)
+* Server-side rendering
